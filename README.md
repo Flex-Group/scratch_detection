@@ -1,11 +1,11 @@
 ### scratch_detection
-Mask_rcnn model trained to detect external scratches on the body of vehicles
+### Mask_rcnn model trained to detect external scratches on the body of vehicles
 
-How to train the Mask RCNN model on a GPU (Google colab or AWS):
+### How to train the Mask RCNN model on a GPU (Google colab or AWS):
 
 ### First, mount the google drive:
 
-$from google.colab import drive
+$from google.colab import drive\
 $drive.mount('/content/gdrive')
 
 ### Clone the repo that has the Mask-RCNN model and the dataset that will be used for training:
@@ -26,15 +26,15 @@ $pip install -r scratch_detection/requirements.txt
 ### -The scratch_dataset contains the prepared (annotated) images coupled with the json format file that will be used for training the model.
 ### -The logs folder is where the weights of the model will be saved at each epoch. No need to create the folder since it can be created by the python script.
 
-$unzip scratch_detection/mrcnn.zip
-$unzip scratch_detection/scratch_dataset.zip
+$unzip scratch_detection/mrcnn.zip\
+$unzip scratch_detection/scratch_dataset.zip\
 $unzip scratch_detection/logs.zip
 
 ### Copy or Move the unzipped folders back into the main folder, which is the scratch_detection folder:
 
-$cp mrcnn -r scratch_detection/
-$cp scratch_dataset -r scratch_detection
-$cp logs -r scratch_detection
+$cp mrcnn -r scratch_detection/\
+$cp scratch_dataset -r scratch_detection\
+$cp logs -r scratch_detection\
 
 ### Train the Mask RCNN model using the prepared scratch_dataset as follows
 
