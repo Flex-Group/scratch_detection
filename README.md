@@ -14,7 +14,7 @@ $git clone https://github.com/Flex-Group/scratch_detection
 
 ### Install Tensorflow and Keras:
 
-$pip install tensorflow==1.15.0\\
+$pip install tensorflow==1.15.0\
 $pip install keras==2.2.5
 
 ### Install the required packages using the requirements.txt file:
