@@ -34,7 +34,7 @@ Copy or Move the unzipped folders back into the main folder, which is the scratc
 
 $cp mrcnn -r scratch_detection/\
 $cp scratch_dataset -r scratch_detection\
-$cp logs -r scratch_detection\
+$cp logs -r scratch_detection
 
 Train the Mask RCNN model using the prepared scratch_dataset as follows
 
