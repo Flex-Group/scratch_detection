@@ -38,7 +38,7 @@ $cp logs -r scratch_detection
 
 Train the Mask RCNN model using the prepared scratch_dataset as follows
 
-$python3 /content/scratch_detection/scratch_model.py train --dataset=/content/scratch_detection/scratch_dataset --weight=coco\
+$python3 /content/scratch_detection/scratch_model.py train --dataset=/content/scratch_detection/scratch_dataset --weight=coco
 
 Note that, once the model training is completed, the weights of the model will be saved in the logs directory.\
 These weights will be used to test and apply the model.
